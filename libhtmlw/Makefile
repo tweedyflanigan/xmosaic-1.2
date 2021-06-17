@@ -5,7 +5,7 @@ CC = cc
 endif
 
 ifeq ($(DEV_ARCH), osx)
-CC = cc -mmacosx-version-min=10.5 -arch i386
+CC = gcc-6 -mmacosx-version-min=10.15 -arch x86_64
 endif
 
 ifeq ($(DEV_ARCH), solaris9)
@@ -33,7 +33,7 @@ endif
 OTHERFLAGS = 
 
 ifeq ($(DEV_ARCH), osx)
-OTHERFLAGS = -DNEXT -I/usr/include/X11 -I /opt/X11/include/
+OTHERFLAGS = -DNEXT -I/usr/X11/include -I /opt/X11/include/
 endif
 
 # ----------------------------------------------------------------------------

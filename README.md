@@ -1,5 +1,9 @@
 # ``xmosaic-1.2``
 
+```
+Updated 17 June 2021: Modified Makefiles so that this will compile using gcc-6 (available on Homebrew) and current OpenMotif and XQuartz installations.
+```
+
 I took a few hours, downloaded ``xmosaic-1.2`` and got it working on Max OS X as part
 of an article I was writing - the code is here in case you want to experience what the
 web was like in 1993 :)

@@ -5,7 +5,7 @@ CC = cc
 endif
 
 ifeq ($(DEV_ARCH), osx)
-CC = cc -g -DNEXT -mmacosx-version-min=10.5 -arch i386
+CC = gcc-6 -g -DNEXT -mmacosx-version-min=10.15 -arch x86_64
 endif
 
 ifeq ($(DEV_ARCH), solaris9)

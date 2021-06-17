@@ -20,7 +20,7 @@ ifeq ($(DEV_ARCH), linux)
 endif
 
 ifeq ($(DEV_ARCH), osx)
- CC = cc -DNEXT -I/usr/include/X11 -I/opt/X11/include -I/usr/OpenMotif/include -mmacosx-version-min=10.5 -arch i386 -Dosx
+ CC = gcc-6 -DNEXT -I/usr/X11/include -I/opt/X11/include -I/usr/local/opt/openmotif/include -mmacosx-version-min=10.15 -arch x86_64 -Dosx
 endif
 
 ifeq ($(DEV_ARCH), solaris9)
@@ -49,7 +49,7 @@ ifeq ($(DEV_ARCH), linux)
 endif
 
 ifeq ($(DEV_ARCH), osx)
- X_LIBS = -L/usr/OpenMotif/lib -L/usr/X11/lib -L/opt/X11/lib -lXm -lXmu -lXt -lX11
+ X_LIBS = -L/usr/local/opt/openmotif/lib -L/usr/X11/lib -L/opt/X11/lib -lXm -lXmu -lXt -lX11
 endif
 
 ifeq ($(DEV_ARCH), solaris9)

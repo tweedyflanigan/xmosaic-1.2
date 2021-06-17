@@ -10,7 +10,7 @@ dev_::
 	@echo "You must specify one of the following or set the environment variable"
 	@echo "[DEV_ARCH] to one of the following:"
 	@echo "  linux -- x86 running Linux with correct libs installed"
-	@echo "  osx -- Mac OSX 10.6+ with xcode"
+	@echo "  osx -- Mac OSX 10.15+ with xcode"
 	@echo "  solaris9 -- Solaris 9 with correct libs instatlled"
 	@echo " "
 	@echo "  clean -- Clean all files"
