@@ -1,7 +1,16 @@
 # ``xmosaic-1.2``
 
 ```
-Updated 17 June 2021: Modified Makefiles so that this will compile using gcc-6 (available on Homebrew) and current OpenMotif and XQuartz installations.
+Updated 17 June 2021: 
+
+========================================
+ COMPILE X MOSAIC 1.2 ON MACOS BIG SUR!
+========================================
+
+Modified Makefiles so that this will 
+compile using gcc-6 (available on 
+Homebrew) and current OpenMotif and 
+XQuartz installations.
 ```
 
 I took a few hours, downloaded ``xmosaic-1.2`` and got it working on Max OS X as part
@@ -26,17 +35,23 @@ Install the required dependencies before building:
 
 	$ apt-get install build-essential libxmu-dev libxmu-headers libxpm-dev libmotif-dev imagemagick
 
-#### Mac OS X (10.6+)
+#### Mac OS X ~~(10.6+)~~ `10.15+`
 
-On <b>10.8 and later</b>, download and install XQuartz:
+```
+Updated 17 June 2021: 
+Get XQuartz by: brew install --cask xquartz
+Get OpenMotif by: brew install openmotif
+```
 
-	http://xquartz.macosforge.org/landing/
+~~On <b>10.8 and later</b>, download and install XQuartz:~~
 
-On all versions, download and install OpenMotif:
+~~http://xquartz.macosforge.org/landing/~~
 
-	http://www.ist-inc.com/motif/download/index.html
+~~On all versions, download and install OpenMotif:~~
 
-OpenMotif installs into ``/usr/OpenMotif``
+~~http://www.ist-inc.com/motif/download/index.html~~
+
+~~OpenMotif installs into ``/usr/OpenMotif``~~
 
 #### Solaris 9 (32-bit)
 
@@ -89,5 +104,4 @@ working on the code and want to see if it breaks.
 ![XMosaic 1.2 running on Max OSX](XMosaic/xmosaic.jpg)
 
 ![XMosaic 1.2 viewing info.cern.ch](XMosaic/info-cern.jpg)
-
 
